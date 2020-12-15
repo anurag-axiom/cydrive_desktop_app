@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cydrive</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+
+<body>
+  <script>
+    const loadRegistrationPage = () => {
+      console.log("checkbox clicked")
+      window.location.href = window.location.href.replace('welcome', 'registration')
+    }
+  </script>
+  <div class="d-flex" style="position: absolute; height: 100%; width: 100%;">
+    <div style="background-color: #0c2845;" class="text-center d-flex flex-column w-100 align-items-center">
+      <div class="d-flex align-items-end flex-fill w-100 justify-content-center">
+        <span style="color: white; font-size: xxx-large;">Welcome to</span>
+      </div>
+      <div class="d-flex flex-fill align-items-center justify-content-center">
+        <img class="img-fluid" style="width: 25%;" src="img/Cydrive_light.png" alt="Cydrive-Logo">
+      </div>
+      <div class="flex-fill d-flex">
+        <div class="flex-fill d-flex justify-content-end">
+          <input type="checkbox" style="width: 5%; height: 5%" class="form-check-input" id="license_chkbx"
+            onclick="loadRegistrationPage()">
+        </div>
+        <div class="flex-fill d-flex justify-content-start">
+          <label class="form-check-label" style="color: white; font-size: xxx-large;" for=" license_chkbx">I accept the
+            terms in
+            <a href="" style="color: #7eac8c;">
+              <u>License Agreement</u>
+            </a>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
